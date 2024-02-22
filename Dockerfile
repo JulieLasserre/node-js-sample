@@ -32,3 +32,4 @@ EXPOSE 3000
 ENTRYPOINT ["powershell.exe"]
 # Exécutez l'application
 CMD ["npm", "start"]
+LABEL "version"="latest"

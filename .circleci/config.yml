@@ -1,0 +1,19 @@
+version: 2.1
+
+jobs:
+  build:
+    docker:
+      - image: node:latest
+
+    steps:
+      - checkout
+
+      # Installer les dépendances
+      - run:
+          name: Install Dependencies
+          command: npm install
+
+      # Exécuter les tests
+      - run:
+          name: Run Tests
+          command: npm test
